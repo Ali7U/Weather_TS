@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function App() {
-  const [data, setData] = useState({});
-  const [location, setLocation] = useState("");
+  const [data, setData] = useState<any>({});
+  const [location, setLocation] = useState<string>();
 
  
 
@@ -31,6 +31,7 @@ function App() {
           type="text"
         />
       </div>
+      
       <div className="container">
         <div className="top">
           <div className="location">
